@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 @keyframes bigBlockAnimation {
@@ -257,6 +258,7 @@ footer{
 }
 
 @media screen and (max-width:768px){
+
 #homeImage{
     width: 100%;
     margin-left: 0;
