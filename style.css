@@ -220,7 +220,7 @@ body{
     background-color: #e6d6c7;
 }
 .nav-links{
-    display: flex; 
+    display: none; 
     justify-content: space-around;
     width: 40%;
 }
@@ -325,6 +325,7 @@ body{
 }
 
 .nav-active{
+    display: flex; 
     transform: translateX(0%) ;
 }
 
