@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    color: #ECB365;
+    background-color: #041C32;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.player{
+    position: absolute;
+    height: 200px;
+}
+
+#home{
+    width: 470px;
+    height: 360px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+#mycanvas{
+    padding: 50px;
+    background-color: #ECB365;
+    background-image: url('textures/background.png');
+    border-radius: 5%;
+    color:#041C32
+}
+
+#instructions{
+    padding-left: 5%;
+}
+
+.button {
+    color: #064663;
+    border-radius: 25px;
+    background-color: #ECB365;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+.score {
+    position: relative;
+    color: #041C32;
+}
+  /* colours
+  dark navy - #041C32
+  less dark navy - #04293A
+  lesser dark navy - #064663
+  yellow - #ECB365 */

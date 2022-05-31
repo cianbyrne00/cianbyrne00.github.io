@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Sokoban</title>
+      <link rel="stylesheet" href="sokoba.css"/>
+   </head>
+   <body>
+      <div class = 'score'>
+         <p>Level <span id='level'></span> &nbsp;
+            Boxes = <span id='score'></span>/<span id='maxBoxes'></span> &nbsp;
+            Moves = <span id = 'moves'></span></p>
+      </div>
+      <div id = 'screen'>      
+      <canvas id="mycanvas" height='360px' width='450px' ></canvas>
+      <p>
+         <div id="buttons">
+            <button class = 'button' onclick = "startGame(1)"> Level 1 - Easy </button>
+            <button class = 'button' onclick = "startGame(2)"> Level 2 - Medium</button>
+            <button class = 'button' onclick = "startGame(3)"> Level 3 - Hard</button>
+         </div>
+      </p>
+      <p id = 'controls'>
+         Use the 'WASD' or arrow keys to move. Press the 'R' key to restart.<br> 
+         To win place all the boxes on the red targets. 
+      </p>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="sokoban.js" ></script>
+   </body>
+</html>
