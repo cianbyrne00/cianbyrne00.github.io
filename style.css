@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 @keyframes bigBlockAnimation {
@@ -215,12 +214,13 @@ nav{
     min-height: 8vh;
     font-family: "Helvetica", Sans-Serif;
     background-color:#F2EEEB;
+    overflow-x: hidden;
 }
 body{
     background-color: #e6d6c7;
 }
 .nav-links{
-    display: none; 
+    display: flex; 
     justify-content: space-around;
     width: 40%;
 }
@@ -258,7 +258,6 @@ footer{
 }
 
 @media screen and (max-width:768px){
-
 #homeImage{
     width: 100%;
     margin-left: 0;
@@ -314,7 +313,9 @@ footer{
     z-index: 9;
 }
 body{
+    overflow-y: auto;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 .nav-links li{
     opacity: 0;
@@ -325,7 +326,6 @@ body{
 }
 
 .nav-active{
-    display: flex; 
     transform: translateX(0%) ;
 }
 
