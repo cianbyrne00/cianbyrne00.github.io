@@ -20,10 +20,8 @@ nav{
     width: 40%;
     list-style: none;
 }
-.logo{
-    color:#2b2b2b;
-}
-.logo a{
+
+#logo a{
     color: #E27D60;
 }
 a{
@@ -55,12 +53,16 @@ b{
 img{
     width: 50%;
     float: right;
+    border-radius: 20px;
     
+}
+.projects{
+    padding-top: 20px;
 }
 .project{
     position: relative;
     width: 80%;
-    height: 300px;
+    height: 320px;
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 2%;
@@ -78,7 +80,8 @@ img{
 }
 .projectText h1{
     text-align: left;
-    font-size: 23px;
+    font-size: 28px;
+    font-weight: 200;
 }
 img{
    max-width: 40%;
@@ -87,7 +90,7 @@ img{
     position: relative;
     width: 80%;
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-bottom: 10%;
     color: #2b2b2b;
     font-family: 'Oxygen', sans-serif;
