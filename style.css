@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+
   }
 body{
     background-color: #FFFBF8;
@@ -17,25 +18,40 @@ nav{
 .nav-links{
     display: flex; 
     justify-content: space-around;
-    width: 40%;
+    width: 80%;
     list-style: none;
+    padding-left: 0;
 }
 
 #logo a{
     color: #E27D60;
 }
+#logo{
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
 a{
     text-decoration: none;
     color: #7A7A7A;
-}
-.logo{
-   color: #E27D60;
 }
 a:hover{
     color: #E27D60;
 }
 img:hover{
     opacity: 20%;
+}
+#profilePicture{
+    border-radius: 50%;
+    float: left;
+    margin-right: 10%;
+}
+#profilePictureV2{
+    border-radius: 0%;
+    align-items: center;
+    margin-right: 35%;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    width: 30%;
 }
 h1{
     position: relative;
@@ -58,6 +74,7 @@ img{
 }
 .projects{
     padding-top: 20px;
+    margin-bottom: 2%;
 }
 .project{
     position: relative;
@@ -66,9 +83,16 @@ img{
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 2%;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
     font-family: Josefin Sans;
     font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+}
+.aboutText{
+    width: 40%;
+    margin-left: 30%;
+    font-family: Josefin Sans;
     line-height: 37px;
     letter-spacing: 0.01em;
 }
@@ -85,12 +109,27 @@ img{
 }
 img{
    max-width: 40%;
+   height: 100%;
 }
 #opener{
     position: relative;
+    width: 65%;
+    margin-left: 17.5%;
+    margin-top: 4%;
+    margin-bottom: 6%;
+    color: #2b2b2b;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 3.5em;
+    font-weight: 400;
+    line-height: 97px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+#about{
+    position: relative;
     width: 80%;
     margin-left: 10%;
-    margin-top: 8%;
+    margin-top: 4%;
     margin-bottom: 10%;
     color: #2b2b2b;
     font-family: 'Oxygen', sans-serif;
@@ -103,4 +142,57 @@ img{
 
 #explore{
     font-size: .8em;
+}
+
+.button-51 {  
+  font-family: Josefin Sans;
+  background-color: transparent;
+  border: 1px solid #E27D60;
+  box-sizing: border-box;
+  color: #00132C;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 25px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #edab98;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+    background-color: #e08f79;
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}
+
+#buttonDiv{
+    margin-bottom: 20px;
 }
