@@ -40,10 +40,26 @@ a:hover{
 img:hover{
     opacity: 20%;
 }
+#linkedIn{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    position: relative;
+    float: inherit;
+}
+#picDiv{
+    margin-bottom: 100%;
+}
+#aboutP{
+    width: 65%;
+    font-size: 45px;
+}
 #profilePicture{
+    width: 456px;
     border-radius: 50%;
-    float: left;
-    margin-right: 10%;
+    float: right;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 #profilePictureV2{
     border-radius: 0%;
@@ -67,9 +83,11 @@ b{
     color: #E27D60;
 }
 img{
-    width: 50%;
+    /* width: 50%; */
     float: right;
     border-radius: 20px;
+    /* max-width: 40%; */
+    height: 100%;
     
 }
 .projects{
@@ -78,12 +96,12 @@ img{
 }
 .project{
     position: relative;
-    width: 80%;
+    width: 65%;
     height: 320px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
     padding-top: 2%;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     font-family: Josefin Sans;
     font-weight: 600;
     line-height: 37px;
@@ -91,13 +109,14 @@ img{
 }
 .aboutText{
     width: 40%;
+    font-size: 18px;
     margin-left: 30%;
     font-family: Josefin Sans;
     line-height: 37px;
     letter-spacing: 0.01em;
 }
 .projectText{
-    width: 50%;
+    width: 65%;
     float: left;
     text-align: left;
     font-size: 20px;
@@ -107,9 +126,10 @@ img{
     font-size: 28px;
     font-weight: 200;
 }
-img{
-   max-width: 40%;
-   height: 100%;
+
+.projectImg{
+    width: 356px;
+    border-radius: 50%;
 }
 #opener{
     position: relative;
@@ -127,19 +147,26 @@ img{
 }
 #about{
     position: relative;
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 4%;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
     color: #2b2b2b;
     font-family: 'Oxygen', sans-serif;
     font-size: 3.5em;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 97px;
     letter-spacing: 0.01em;
     text-align: center;
 }
-
+.line{
+    background-color: #e08f79;
+    margin-left: 10%;
+    width: 80%;
+    height: 2px;
+    border-radius: 25%;
+}
 #explore{
     font-size: .8em;
 }
