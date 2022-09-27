@@ -124,7 +124,17 @@ img{
     font-size: 28px;
     font-weight: 200;
 }
-
+.title {
+    color:#E27D60;
+    font-style: italic;
+    font-family: 'Oxygen', sans-serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.openingP{
+    font-size: 24px;
+    line-height: 32px;
+}
 .projectImg{
     position: inherit;
     width: 80%;
