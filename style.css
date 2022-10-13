@@ -338,6 +338,26 @@ nav{
 .forMobileLi{
     display: flex;
 }
+/* mobile view for project page */
+#about{
+    margin: 0;
+    width: 100%
+}
+iframe{
+    width: 100%;
+}
+.title{
+    margin-top: 10%;
+    font-size: .7em;
+    line-height: 60px;
+}
+.openingP{
+    font-size: .25em;
+    line-height: 35px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
 }
 .nav-active{
     transform: translateX(0%) ;
