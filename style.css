@@ -24,6 +24,9 @@ nav{
 li{
     padding-top: 2%;
 }
+.forMobileLi{
+    display: none;
+}
 
 #logo a{
     color: #E27D60;
@@ -322,6 +325,9 @@ body{
 }
 nav{
     margin-top: 10%;
+}
+.forMobileLi{
+    display: flex;
 }
 }
 .nav-active{
