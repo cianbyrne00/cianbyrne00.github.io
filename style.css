@@ -320,9 +320,9 @@ body{
     text-align: center;
     width: 80%;
 }
-}
 nav{
     margin-top: 10%;
+}
 }
 .nav-active{
     transform: translateX(0%) ;
