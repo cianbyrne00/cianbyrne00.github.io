@@ -1,12 +1,13 @@
 html {
     scroll-behavior: smooth;
   }
-.wrapper{
+#wrapper{
     overflow-x: hidden;
 }
 body{
     background-color: #FFFBF8;
     text-align: center;
+    overflow-x: hidden;
 }
 nav{
     display: flex;
@@ -271,8 +272,12 @@ img{
 }
 
 @media screen and (max-width:760px){
+html{
+    overflow-x: hidden;
+}
 body{
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 .project{
     position: relative;
