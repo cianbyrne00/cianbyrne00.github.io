@@ -17,6 +17,7 @@ nav{
     font-family: "Helvetica", Sans-Serif;
     background-color:#FFFBF8;
     overflow-x: hidden;
+    
 }
 .nav-links{
     display: flex; 
@@ -72,7 +73,7 @@ img:hover{
     margin-bottom: 100%;
 }
 #aboutP{
-    width: 65%;
+    width: 100%;
     font-size: 45px;
 }
 #profilePicture{
@@ -226,6 +227,7 @@ img{
   font-weight: 700;
   line-height: 24px;
   padding: 25px 23px;
+  margin-bottom: 15px;
   position: relative;
   text-decoration: none;
   user-select: none;
@@ -303,18 +305,17 @@ body{
     padding: 15px 13px;
 }
 .nav-links{
-    transform: translateX(100%);
+    display: none;
     transition: transform 0.5s ease-in; 
     position: absolute;
     right: 0px;
-    height: 89vh;
-    top: 11vh;
+    height: 86vh;
+    top: 14vh;
     background-color: #FFFBF8;
-    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    z-index: 9;
+    z-index: 1;
 }
 
 .nav-links li{
@@ -339,6 +340,7 @@ body{
 }
 nav{
     margin-top: 10%;
+    margin-bottom: 30px;
 }
 .forMobileLi{
     display: flex;
@@ -367,7 +369,7 @@ iframe{
 #profilePicture{
     width: 80%;
     float: none;
-    margin-top: 20%;
+    margin-top: 4%;
 }
 #aboutP{
     font-size: .4em;
@@ -380,10 +382,16 @@ iframe{
     font-size: 0.8em;
     line-height: 2.2em;
 }
+/* mobileView for contact page */
+#linkedIn{
+    float: none;
+    margin-top: 5%;
+}
 }
 .nav-active{
-    transform: translateX(0%) ;
-    position: fixed;
+    display: flex;
+    height: fill;
+    padding-bottom: 120vh;
 }
 @keyframes navLinkFade{
     from {
