@@ -166,7 +166,7 @@ img{
     width: 80%;
 }
 #opener{
-    position: relative;
+    position: inherit;
     width: 65%;
     margin-left: 17.5%;
     margin-top: 4%;
@@ -308,7 +308,7 @@ body{
 .nav-links{
     display: none;
     transition: transform 0.5s ease-in; 
-    position: fixed;
+    position: relative;
     right: 0px;
     height: 86vh;
     top: 14vh;
@@ -393,7 +393,7 @@ iframe{
 }
 .nav-active{
     display: flex;
-    position:fixed;
+    position:absolute;
     z-index: 1000;
     height: fill;
     padding-bottom: 120vh;
