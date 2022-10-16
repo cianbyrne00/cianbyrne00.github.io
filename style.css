@@ -111,7 +111,7 @@ img{
     /* max-width: 40%; */
     
 }
-#projects{
+.projects{
     position: inherit;
     padding-top: 20px;
     margin-bottom: 2%;
