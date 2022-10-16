@@ -389,6 +389,8 @@ iframe{
 }
 .nav-active{
     display: flex;
+    position:absolute;
+    z-index: 1;
     height: fill;
     padding-bottom: 120vh;
 }
