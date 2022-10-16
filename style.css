@@ -308,7 +308,7 @@ body{
 .nav-links{
     display: none;
     transition: transform 0.5s ease-in; 
-    position: absolute;
+    position: fixed;
     right: 0px;
     height: 86vh;
     top: 14vh;
@@ -320,6 +320,7 @@ body{
 
 .nav-links li{
     opacity: 0;
+    
 }
 .burger{
     display: block;
@@ -337,10 +338,12 @@ body{
     letter-spacing: 0.01em;
     text-align: center;
     width: 80%;
+    z-index: 0;
 }
 nav{
     margin-top: 10%;
     margin-bottom: 30px;
+    z-index: 100;
 }
 .forMobileLi{
     display: flex;
