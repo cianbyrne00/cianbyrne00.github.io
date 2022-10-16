@@ -67,7 +67,7 @@ img:hover{
     width: 100px;
     height: 100px;
     align-items: center;
-    position: relative;
+    position: inherit;
     float: inherit;
 }
 #picDiv{
@@ -111,7 +111,7 @@ img{
     /* max-width: 40%; */
     
 }
-.projects{
+#projects{
     position: inherit;
     padding-top: 20px;
     margin-bottom: 2%;
@@ -273,6 +273,7 @@ img{
     margin-top:40px;    
     margin-bottom: 20px;
     text-align: center;
+    position: inherit;
 }
 
 @media screen and (max-width:760px){
@@ -284,7 +285,7 @@ body{
     -webkit-overflow-scrolling: touch;
 }
 .project{
-    position: relative;
+    position: inherit;
     width: 80%;
     margin-left: 10%;
     height: 18em;
