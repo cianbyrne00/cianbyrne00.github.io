@@ -390,10 +390,11 @@ iframe{
 }
 .nav-active{
     display: flex;
-    position:absolute;
-    z-index: 100;
+    position:fixed;
+    z-index: 1000;
     height: fill;
     padding-bottom: 120vh;
+    background-color: #FFFBF8;
 }
 @keyframes navLinkFade{
     from {
