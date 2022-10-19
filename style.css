@@ -392,7 +392,6 @@ iframe{
     float: none;
     margin-top: 5%;
 }
-}
 .nav-active{
     display: flex;
     position:absolute;
@@ -401,6 +400,8 @@ iframe{
     padding-bottom: 120vh;
     background-color: #FFFBF8;
 }
+}
+
 @keyframes navLinkFade{
     from {
         opacity: 0;
