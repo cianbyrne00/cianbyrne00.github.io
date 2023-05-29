@@ -1,0 +1,72 @@
+
+
+.introduction
+{
+    width: 100%;
+    font-size: 2.5vh;
+    line-height: 40px;
+}
+
+.introduction h1
+{
+    margin-top: 4px;
+    text-align: center;
+    font-size: 5vh;
+    line-height: 52px;
+}
+
+.introduction h2
+{
+    margin-top: 4px;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 200;
+}
+
+h2 b
+{
+    color: rgb(227 179 211);
+}
+
+.introduction p
+{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.introduction ul
+    {
+        padding-left: 16px;
+    }
+
+.introduction li
+{
+    margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 850px) 
+{
+    #canvas
+    {
+        width: 90%;
+    }
+
+    .introduction
+    {
+        line-height: 25px;
+    }
+
+    .introduction h1
+    {
+        text-align: left;
+        font-size: 3vh;
+        line-height: 32px;
+    }
+
+    .introduction h2
+    {
+        text-align: left;
+        font-size: 3vh;
+        line-height: 32px;
+    }
+}

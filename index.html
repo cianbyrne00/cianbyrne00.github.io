@@ -6,78 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cian Byrne</title>
     <link rel="stylesheet" href="style.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Jost&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id = "wrapper">
-    <nav>
-        <ul class = "nav-links">
-        <li><a href= "index.html#projects"> Projects </a></li>
-        <li><a href= "pages/CV.pdf" target=" _blank"> Resume </a></li>
-        <li class = "forMobileLi"><a href= "pages/about.html"> About Me </a></li>
-        <li class = "forMobileLi"><a href= "pages/contact.html"> Contact </a></li>
-        </ul>
-        <div id = "logo">  <a href ="index.html"> <b> Cian Byrne </b></a></div>
-        <ul class="nav-links">
-            <li><a href= "pages/about.html"> About Me </a></li>
-            <li><a href= "pages/contact.html"> Contact </a></li>
-            </ul>
-        <div class = burger>
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-    <div id = "opener">
-        <p> My name is Cian and I'm a <b>programmer</b>, designer and digital creator.
-            My work includes building <b>applications</b> and <b>websites</b>.</p>
-            <p id = "explore">
-                    Explore my <a href="#projects"><b> projects </b> </a> below.
-            </p>
-    </div>
-    <div class = "line"></div>
-<div class = "projects">
-<div id = "projects"></div>
-
-    <div class = "project">
-    <div class = "projectText">
-        <p>  <b>Postgraduate Research Paper, UX design, User Research </b></p>
-        <h1>  <b>UX Designer Guidlines:</b> Designing a CALL application for a Chinese demographic.</h1>
-        <div class="buttonDiv">
-            <form action = "./pages/researchPaper.html" action = "get"> <button class="button-51" role="button">Read More</button> </form>
-    </div>
-    </div>
-    </div>
-    <div class = "project">
-        <div class = "projectText">
-            <p>  <b>Postgraduate Research Project, Unreal Engine 5, 3DsMax, Immersive Interaction. </b></p>
-            <h1>  <b>Planet Sustainability:</b> An educational interactive installation. </h1>
-            <div class="buttonDiv">
-                <form action = "./pages/researchProject.html" method = "get"> <button class="button-51" role="button"> Read More </button> </form>
-                  </div>
-    </div>
-    </div>
-    <div class = "project">
-        <div class = "projectText">
-            <p>  <b>Project Manager, Website Developer, CSS, HTML, JavaScript, Bootstrap </b></p>
-            <h1>  <b>Sapori Website:</b> New Website for local Italian Cafe. </h1>
-            <div class="buttonDiv">
-                <form action = "./pages/Sapori.html" action = "get"> <button class="button-51" role="button">Read More</button> </form>
-        </div>
-        </div>
-        </div>
-    </div>
-        <div id = "backToTop">
-            <div class = "projectText">
-                <h1>  <a href = '#logo'><b>Back To Top?</b> </a> </h1>
+    <div id="screen">
+        <div id="canvas">
+            <div class="header">
+            <div class="logo_container"><a href="index.html"><h1 id="full_name"> Cian Byrne </h1> <h1 id="short_name"> Cian </h1> </a></div>
+            <div class="burger_container"></div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
+            <ul class="nav_list">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.pdf" target="blank">Resume</a></li>
+                <li id="selected"><a href="index.html">About</a></li>
+            </ul>
+            </div>
+            <div class="content">
+                <div class="content_left">
+                    <img src="images/home.JPG"/>
+                </div>
+                <div class="content_right">
+                    <p class="headline"> UX Developer</p>
+                    <p class="byline"> Based in London, UK. </p>
+                    <p> Hello! </p>
+                    <p> I'm Cian and I like to design and develop software.</p>
+                    <p> From websites, research, science installations and video games, UX has been my passion since I started my career. </p>
+                    <p> Combining creativity and effecincy in a user-centered design, I'm eager to collaborate! Feel free to reach out via the links below. </p>
+                    <div class="button_container">
+                       <div> Mobile: <a href="tel:+353838577260">+353 83 857 7260</a></div>
+                       <div> Email: <a href="mailto:cianbyrne7@gmail.com"> cianbyrne7@gmail.com </a></div>
+                       <div> LinkedIn: <a href="https://www.linkedin.com/in/cianbyrneux/"> @cianbyrneux </a></div>
+                    </div>
+                </div>
+               
+            </div> 
+            <div class="footer">
+            </div>
         </div>
     </div>
-    <script src="app.js"></script>  
+ <script src="app.js"></script>  
 </body>
 
 </html>
