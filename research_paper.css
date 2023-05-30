@@ -70,3 +70,13 @@ h2 b
         line-height: 32px;
     }
 }
+
+/*  planet sus*/
+
+.video_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
