@@ -82,7 +82,7 @@ a, a:visited, a:active
 .nav_list
 {
     margin-left: 20%;
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     list-style: none;
