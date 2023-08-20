@@ -1,16 +1,4 @@
 
-#screen
-{
-    width: 80vw;
-    height: 100vh;
-    display: flex;
-    padding: 0 10vw;
-    flex-direction: column;
-    background-color: white;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 #full_name
 {
     display: block;
@@ -23,13 +11,18 @@
 
 body
 {
-    width: 100%;
-    min-height: 100%;   
     margin: 0;
     display: block;
     background-color: white;
     font-size: 2.5vh;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    padding: 0 10vw;
+    flex-direction: column;
+    background-color: white;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 hr
@@ -360,18 +353,13 @@ Mobile View
     {
         display: none;
     }
-
-    #canvas
-    {
-        padding: 0;
-        width: 100%;
-    }
     
     .logo_container
     {
         font-size: 3.5vh;
-        width: 100%;
-        margin-left: 70px;
+        height: 100%;
+        line-height: 32px;
+        margin-left: 90px;
         text-align: center;
     }
     
@@ -393,9 +381,12 @@ Mobile View
         display: block;
     }
 
-    .body
+    body
     {
         overflow-x: hidden;
+        padding: 0;
+        width: 90vw;    
+        padding: 0 5vw;
     }
 
     .burger_container
