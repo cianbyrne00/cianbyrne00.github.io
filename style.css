@@ -110,7 +110,7 @@ li:hover
     align-self: center; 
     margin: 0;
     display:inline-block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 200;
 }
 
@@ -437,8 +437,9 @@ Mobile View
         display: none;  
         position: relative;
         right: 0px;
-        height: 90vh;
-        top: 10vh;
+        height: 85%;
+        top: 15%;
+        margin: 0;
         background-color: white;    
         flex-direction: column; 
         justify-content: space-evenly;
