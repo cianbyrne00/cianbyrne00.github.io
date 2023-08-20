@@ -1,9 +1,10 @@
 
 #screen
 {
-    width: 100vw;
+    width: calc(100vw - 20%);
     height: 100vh;
     display: flex;
+    padding: 0 10%;
     flex-direction: column;
     background-color: white;
     overflow-x: hidden;
@@ -28,7 +29,7 @@ body
     display: block;
     background-color: white;
     font-size: 2.5vh;
-    overflow: auto;
+    overflow-x: hidden;
 }
 
 hr
@@ -495,12 +496,19 @@ Mobile View
     .nav-active
     {
         display: flex;
+        justify-content: flex-start;
         position: absolute;
         z-index: 1000;
         height: 90vh;
         transition: all .4s ease-out;
         overflow: hidden;
         overflow-x: hidden;
+    }
+    
+    .nav-active li
+    {
+        margin-top: 8vh;
+        margin-bottom: 6vh;
     }
 
 
