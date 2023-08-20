@@ -360,6 +360,7 @@ Mobile View
         height: 100%;
         line-height: 32px;
         margin-left: 25%;
+        font-weight: bold;
         text-align: center;
     }
     
