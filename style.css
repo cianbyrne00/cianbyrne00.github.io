@@ -422,8 +422,8 @@ Mobile View
         display: none;  
         position: relative;
         right: 0px;
-        height: 85%;
-        top: 15%;
+        height: 90vh;
+        top: 10vh;
         margin: 0;
         background-color: white;    
         flex-direction: column; 
@@ -489,9 +489,9 @@ Mobile View
     {
         display: flex;
         justify-content: flex-start;
-        position: absolute;
+        position: fixed;
         z-index: 1000;
-        height: 90vh;
+        height: 100vh;
         transition: all .4s ease-out;
         overflow: hidden;
         overflow-x: hidden;
