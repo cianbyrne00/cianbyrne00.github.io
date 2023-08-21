@@ -430,7 +430,19 @@ Mobile View
         justify-content: space-evenly;
         width: 100%;
         font-size: 3.5vh;
+        transition: all 0.4s ease-out;
+    }
+
+    .nav-active
+    {
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+        z-index: 1000;
+        height: 100vh;
         transition: all .4s ease-out;
+        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .content_left
@@ -490,16 +502,9 @@ Mobile View
         position: fixed;
     }
 
-    .nav-active
+    .nav-active li:first-child
     {
-        display: flex;
-        justify-content: flex-start;
-        position: fixed;
-        z-index: 1000;
-        height: 100vh;
-        transition: all .4s ease-out;
-        overflow: hidden;
-        overflow-x: hidden;
+        margin-top: 22vw;
     }
     
     .nav-active li
