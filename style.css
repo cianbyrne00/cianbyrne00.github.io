@@ -485,6 +485,11 @@ Mobile View
         height: 120px;
     }
 
+    .fixed
+    {
+        position: fixed;
+    }
+
     .nav-active
     {
         display: flex;
