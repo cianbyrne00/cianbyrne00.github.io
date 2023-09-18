@@ -253,14 +253,14 @@ button:disabled
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
 }
 
 .project_button
 {
     border: none;
-    width: 20vw;
+    width: calc(20vw - 16px);
     border-radius: 0%;
     padding: 12px;
     margin: 8px;
@@ -284,7 +284,7 @@ button:disabled
     font-weight: 200;
 }
 
-@media only screen and (max-width: 850px) 
+@media only screen and (max-width: 1050px) 
 {
     .projects_container 
     {
@@ -348,7 +348,7 @@ Mobile View
 */
 
 
-@media only screen and (max-width: 850px) 
+@media only screen and (max-width: 1050px) 
 {
     .byline
     {
