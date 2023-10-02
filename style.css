@@ -254,13 +254,14 @@ button:disabled
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     width: 100%;
 }
 
 .project_button
 {
     border: none;
-    width: calc(20vw - 16px);
+    width: calc(15vw - 16px);
     border-radius: 0%;
     padding: 12px;
     margin: 8px;
@@ -284,6 +285,16 @@ button:disabled
     font-weight: 200;
 }
 
+@media only screen and (min-width: 1051px) 
+{
+
+    .project_button
+    {
+        width: calc(15vw - 16px);
+        height: calc(15vw - 16px);
+    }
+}
+
 @media only screen and (max-width: 1050px) 
 {
     .projects_container 
@@ -296,7 +307,7 @@ button:disabled
     .project_button
     {
         padding: 4px;
-        width: 50%;
+        width: 300px;
         margin-bottom: 16px;
         line-height: 16px;
     }
