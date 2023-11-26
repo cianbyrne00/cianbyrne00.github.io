@@ -47,8 +47,7 @@ a, a:visited, a:active
 {
     align-self: center;
     width: 100%;
-    height: 15%;
-    margin-bottom: 0.5vh;
+    height: 20%;
     background-color: #ffffff;
     color: gray;
     font-family: 'Montserrat', sans-serif;
@@ -67,15 +66,14 @@ a, a:visited, a:active
 
 .nav_list
 {
-    margin-left: 35%;
-    width: 50%;
+    margin-left: 25%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     list-style: none;
     align-items: center;
     justify-content: space-between;
     font-size: 2vh;
-    transition: all 0.2s ease-out;
     font-family: 'Jost', sans-serif;
 }
 
@@ -425,7 +423,7 @@ Mobile View
         width: 80%;
         height: 3px;
         margin-bottom: 5%;
-        border-radius: 25%;
+        border-radius: 25px;
         transition: all .4s ease-out;
     }
 
@@ -518,15 +516,15 @@ Mobile View
 
     .video_container
     {
-        margin: 0% 5% 10% 5%;
-        width: 90%;   
+        width: 100%;   
         font-size: 1.5vh;
     }
 
     .video_container iframe
     {
-        width: 100%;
-        height: 240px;
+        width: 540px;
+        height: 320px;
+        margin: 0;
     }
 }
     
