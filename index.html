@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Jost&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <style>
+
         @media only screen and (min-width: 850px) 
         {
             p, .button_container
@@ -20,7 +22,74 @@
                 font-size: 24px;
             }
         }
-     
+
+        /* 
+        ======================================================================================================================================================================================================
+        Form Styling
+        ======================================================================================================================================================================================================
+        */
+
+        #contact_container
+        {
+            padding-bottom: 16px;
+        }
+
+        #sendMessageBtn
+        {
+            border-radius: 0;
+            font-size: 16px;
+            line-height: 32px;
+            padding: 16px 32px;
+            color: white;
+            height: auto;
+            width: auto;
+            background-color: black;
+            font-size: 32px;
+            font-weight: 300;
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+        #hello_text
+        {
+            margin: 20px 0;
+            margin-top: 32px;
+            font-family: 'Roboto', sans-serif;
+        }  
+
+        .input_field
+        {
+            width: 100%;
+            font-size: 32px;
+            border-color: black;
+            border-width: 0.1px;
+            margin: 16px 0;
+            font-family: 'Jost', sans-serif;
+            resize: none;
+            padding: 8px;
+        }
+
+        @media only screen and (max-width: 1050px) 
+        {
+
+        #hello_text
+        {
+            margin-top: 0px;
+        }
+
+        #contact_container
+        {
+            width: calc(100% - 60px);
+            margin-left: 16px;
+        } 
+
+        .input_field
+        {
+            font-size: 20px;
+        }
+
+        }
+
     </style>
 </head>
 <body class="body">
@@ -59,9 +128,45 @@
                 <div> Email: <a href="mailto:cianbyrne7@gmail.com"> cianbyrne7@gmail.com </a></div>
                 <div> LinkedIn: <a href="https://www.linkedin.com/in/cianbyrneux/"> @cianbyrneux </a></div>
             </div>
-        </div>           
+        </div>        
     </div> 
+    <div id="contact_container">
+        <p id="hello_text" class="headline"> Say Hello</p>
+        <form method="post">
+            <input class="input_field" type="text" placeholder="Name" id="name" autocomplete="off">
+            <input class="input_field" type="email" placeholder="Email" id="email" autocomplete="off">
+            <input class="input_field" type="text" placeholder="Subject" id="subject" autocomplete="off">
+            <textarea class="input_field" id="message" resize="none" placeholder="Message" cols="30" rows="10"></textarea>
+            <button id="sendMessageBtn"> Send Message </button>
+        </form>
+    </div>   
  <script src="app.js"></script>  
+ <script>
+        
+    var btn = document.getElementById('sendMessageBtn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+        var body = 
+        `name: ${name} <br/>
+        Email: ${email} <br/>
+        Subject: ${subject} <br/>
+        Message: ${message} <br/>`
+
+        Email.send({
+        SecureToken : "0562b729-a0c8-4396-8aa0-11ca7a408c20",
+        To : 'cianbyrne7@gmail.com',
+        From : 'cianbyrne7@gmail.com',
+        Subject : "contact Message",
+        Body : body
+        }).then(
+        message => alert(message)
+        );
+    });
+</script>
 </body>
 
 </html>
