@@ -28,12 +28,6 @@ h2 b
     color: rgb(227 179 211);
 }
 
-.introduction p
-{
-    text-align: justify;
-    text-justify: inter-word;
-}
-
 .introduction ul
 {
     padding-left: 16px;
@@ -68,7 +62,7 @@ h2 b
     {
         width: calc(100% - 32px);
         padding: 0 16px;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 200;
         line-height: 40px;
     }
