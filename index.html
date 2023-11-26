@@ -157,12 +157,13 @@
         Message: ${message} <br/>`
 
         Email.send({
-        SecureToken : 'b346c809-816e-46eb-8ae9-57ec1012dbd6',
+        SecureToken : '0d719718-e1d8-4c35-a167-2290505efe7a',
         To : 'cianbyrnecontact@gmail.com',
         From : 'cianbyrne7@gmail.com',
         Subject : "Contact Message",
         Body : body
         }).then(
+        message => alert(message)
         );
     });
 </script>
