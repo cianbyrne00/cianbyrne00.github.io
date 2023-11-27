@@ -14,11 +14,6 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <style>
 
-        body
-        {
-            scroll-behavior: smooth;
-        }
-
         @media only screen and (min-width: 850px) 
         {
 
@@ -114,7 +109,7 @@
 </head>
 <body class="body">
     <div class="header">
-        <div class="logo_container"><a href="index.html"><h1 id="full_name"> Cian Byrne </h1> <h1 id="short_name"> Cian </h1> </a></div>
+        <div class="logo_container"><a href="index.html"><h1 id="full_name"> Cian Byrne </h1> <h1 id="short_name">Cian</h1> </a></div>
         <div class="burger_container">
             <div class="burger">
                 <div class="line1"></div>
@@ -125,7 +120,7 @@
         <ul class="nav_list">
             <li><a href="projects.html">Projects</a></li>
             <li><a href="resume.pdf" target="blank">Resume</a></li>
-            <li><a href="index.html#contact_container">Contact</a></li>
+            <li><a href="#contact_container"> Contact</a></li>
             <li id="selected"><a href="index.html">About</a></li>
         </ul>
     </div>
@@ -153,7 +148,7 @@
     </div> 
     <div id="contact_container">
         <p id="hello_text" class="headline"> Say Hello</p>
-        <form method="post">
+        <form id="form" method="post">
             <input class="input_field" type="text" placeholder="Name" id="name" autocomplete="off">
             <input class="input_field" type="email" placeholder="Email" id="email" autocomplete="off">
             <input class="input_field" type="text" placeholder="Subject" id="subject" autocomplete="off">
@@ -163,6 +158,10 @@
     </div>   
  <script src="app.js"></script>  
  <script>
+
+    function resetHref() {
+        location.hash = '';
+    }
         
     var btn = document.getElementById('sendMessageBtn');
     btn.addEventListener('click', function(e){
@@ -184,7 +183,8 @@
         Subject : "Contact Message",
         Body : body
         }).then(
-        message => alert("Your message was sent!")
+        alert("Your message was sent!"),
+        document.getElementById("form").reset()
         );
     });
 </script>
