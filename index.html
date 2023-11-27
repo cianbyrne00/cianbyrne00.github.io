@@ -14,13 +14,18 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <style>
 
+        body
+        {
+            scroll-behavior: smooth;
+        }
+
         @media only screen and (min-width: 850px) 
         {
 
             p, .button_container
             {
                 margin: 16px 0;
-                font-size: 24px;
+
             }
         }
 
@@ -45,9 +50,16 @@
             height: auto;
             width: auto;
             background-color: black;
-            font-size: 32px;
+            font-size: 2.5vh;
             font-weight: 300;
             font-family: 'Roboto', sans-serif;
+            transition: all 0.3s ease-out;
+        }
+
+        #sendMessageBtn:hover
+        {
+            background-color: white;
+            color: black;
         }
 
 
@@ -61,7 +73,7 @@
         .input_field
         {
             width: 100%;
-            font-size: 32px;
+            font-size: 2.5vh;
             border-color: black;
             border-width: 0.1px;
             border-radius: 0;
@@ -113,6 +125,7 @@
         <ul class="nav_list">
             <li><a href="projects.html">Projects</a></li>
             <li><a href="resume.pdf" target="blank">Resume</a></li>
+            <li><a href="index.html#contact_container">Contact</a></li>
             <li id="selected"><a href="index.html">About</a></li>
         </ul>
     </div>
