@@ -120,7 +120,7 @@
         <ul class="nav_list">
             <li><a href="projects.html">Projects</a></li>
             <li><a href="resume.pdf" target="blank">Resume</a></li>
-            <li><a href="#contact_container"> Contact</a></li>
+            <li><a onClick="openContact();"> Contact</a></li>
             <li id="selected"><a href="index.html">About</a></li>
         </ul>
     </div>
@@ -149,18 +149,21 @@
     <div id="contact_container">
         <p id="hello_text" class="headline"> Say Hello</p>
         <form id="form" method="post">
-            <input class="input_field" type="text" placeholder="Name" id="name" autocomplete="off">
-            <input class="input_field" type="email" placeholder="Email" id="email" autocomplete="off">
-            <input class="input_field" type="text" placeholder="Subject" id="subject" autocomplete="off">
-            <textarea class="input_field" id="message" resize="none" placeholder="Message" cols="30" rows="10"></textarea>
+            <input class="input_field" type="text" placeholder="Name" id="name" autocomplete="off" required>
+            <input class="input_field" type="email" placeholder="Email" id="email" autocomplete="off" required>
+            <input class="input_field" type="text" placeholder="Subject" id="subject" autocomplete="off" required>
+            <textarea class="input_field" id="message" resize="none" placeholder="Message" cols="30" rows="10" required></textarea>
             <button id="sendMessageBtn"> Send Message </button>
         </form>
     </div>   
  <script src="app.js"></script>  
  <script>
 
-    function resetHref() {
-        location.hash = '';
+    function openContact() {
+        document.querySelector('.nav_list').classList.toggle('nav-active');
+        document.querySelector('.body').classList.toggle('fixed');
+        document.querySelector('.burger').classList.toggle('toggle');
+        window.open('index.html#contact_container', '_self');
     }
         
     var btn = document.getElementById('sendMessageBtn');
