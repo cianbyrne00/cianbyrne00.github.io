@@ -83,12 +83,13 @@ a, a:visited, a:active
 
 .nav_list li
 {
-    margin-left: 32px;
+    margin-left: 64px;
+    transition: margin-left 0.2s ease-in;
 }
 
 li:hover
 {
-    color: black;
+    color: rgb(227 179 211);
 }
 
 #selected
@@ -370,8 +371,29 @@ Mobile View
  ================================================================================================================================================================
 */
 
+@media only screen and (max-width: 1050px) 
+{
 
-@media only screen and (max-width: 600px) 
+
+    #full_name
+    {
+        display: none;
+    }
+
+    #short_name
+    {
+        display: block;
+    }
+
+    .nav_list li
+    {
+        margin-left: 24px;
+    }
+
+}
+
+
+@media only screen and (max-width: 660px) 
 {
 
     body

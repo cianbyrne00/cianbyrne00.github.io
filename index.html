@@ -120,7 +120,7 @@
         <ul class="nav_list">
             <li><a href="projects.html">Projects</a></li>
             <li><a href="resume.pdf" target="blank">Resume</a></li>
-            <li><a onClick="openContact();"> Contact</a></li>
+            <li><a href="index.html#contact_container" onClick="openContact();"> Contact</a></li>
             <li id="selected"><a href="index.html">About</a></li>
         </ul>
     </div>
@@ -133,11 +133,11 @@
             <p class="byline"> Based in Dublin, Ireland. </p>
             <p> Hello. I'm Cian. </p>
 
-            <p> From websites, research, science installations and video games, UX and UI has been my passion since I started my career. </p>
+            <p> From websites, research, science installations and video games, UX and UI have been my passion since I started my career. </p>
             
             <p> I currently work as a freelance web developer and JavaScript Lecturer.</p>
            
-            <p> Combining creativity and effecincy in a user-centered design with HTML, CSS and JavaScript, I'm eager to collaborate! Feel free to reach out via the links below. </p>
+            <p> I combine creativity and efficiency in a user-centred design with HTML, CSS and JavaScript. I'm eager to collaborate! Feel free to reach out via the links below. </p>
             
             <div class="button_container">
                 <div> Mobile: <a href="tel:+353838577260">+353 83 857 7260</a></div>
@@ -163,7 +163,6 @@
         document.querySelector('.nav_list').classList.toggle('nav-active');
         document.querySelector('.body').classList.toggle('fixed');
         document.querySelector('.burger').classList.toggle('toggle');
-        window.open('index.html#contact_container', '_self');
     }
         
     var btn = document.getElementById('sendMessageBtn');
