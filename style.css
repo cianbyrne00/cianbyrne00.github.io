@@ -83,8 +83,8 @@ a, a:visited, a:active
 
 .nav_list li
 {
-    margin-left: 64px;
-    transition: margin-left 0.2s ease-in;
+    margin-left: 63px;
+    transition: margin-left 0.2s ease-out;
 }
 
 li:hover
