@@ -142,10 +142,15 @@ li:hover
     justify-content: space-evenly;
 }
 
-.button_container a
+.button_container a, #esb_link
 {
     text-decoration: underline;
     font-weight: 200;
+}
+
+#esb_link:hover
+{
+    color: rgb(227 179 211);
 }
 
 
