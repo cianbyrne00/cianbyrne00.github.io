@@ -269,7 +269,7 @@ button:disabled
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 80%;
 }
 
 .project_button
