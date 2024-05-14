@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Photos</title>
+    <title>Art</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="research_paper.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Jost&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+   .photo_container
+    {
+        width: 100%;
+        display: relative;
+    }
+
+    .photo
+    {
+        margin: 0px  35%;
+        width: 30%;
+    }
+
+    .photo_caption
+    {
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 40px;
+    }
+
+
+@media only screen and (max-width: 650px) 
+{
+
+    .photo
+    {
+        margin: 12px 0;
+        width: 100%;
+    }
+
+    .photo_container
+    {
+        width: 90%;
+        display: relative;
+    }
+}
+    </style>
 </head>
 <body class="body">
         <div class="header">
@@ -25,32 +62,16 @@
         </div>
             <ul class="nav_list">
                 <li><a href="projects.html">Projects</a></li>
-                <li id="selected"><a href="photography.html">Photography</a></li>
-                <li><a href="art.html">Art</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li id="selected"><a href="art.html">Art</a></li>
                 <li><a href="contact.html"> Contact</a></li>
                 <li><a href="index.html">About</a></li>
             </ul>
         </div>
         <div class="content">   
                 <div class="photo_container">
-                    <img class="photo" src="photos/image_4-min.webp"/>
-                    <p class="photo_caption"> June 2020 - Dublin, Ireland </p>
-                    <img class="photo" src="photos/image_5-min.webp"/>
-                    <p class="photo_caption"> June 2020 - Dublin, Ireland </p>
-                    <img class="photo" src="photos/image_9-min.webp"/>
-                    <p class="photo_caption"> August 2021 - Lisbon, Portugal </p>
-                    <img class="photo" src="photos/image_10-min.webp"/>
-                    <p class="photo_caption"> August 2021 - Lisbon, Portugal </p>
-                    <img class="photo" src="photos/image_13-min.webp"/>
-                    <p class="photo_caption"> August 2021 - Lisbon, Portugal </p>
-                    <img class="photo" src="photos/image_14-min.webp"/>
-                    <p class="photo_caption"> February 2023 - London, England </p>
-                    <img class="photo" src="photos/image_15-min.webp"/>
-                    <p class="photo_caption"> February 2023 - London, England </p>
-                    <img class="photo" src="photos/image_16-min.webp"/>
-                    <p class="photo_caption"> March 2023 - London, England </p>
-                    <img class="photo" src="photos/image_7-min.webp"/>
-                    <p class="photo_caption"> March 2023 - London, England </p>
+                    <img class="photo" src="art_images/lady_in_green.webp"/>
+                    <p class="photo_caption"> May 2022 - Lady In Green </p>
                 </div>
             <hr/>
         </div> 
