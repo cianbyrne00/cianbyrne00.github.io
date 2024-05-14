@@ -347,16 +347,20 @@ Photos Page
     .photo_container
     {
         width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        align-items: center;
+        display: relative;
     }
 
     .photo
     {
-        margin: 32px 0;
+        margin: 0px  27.5%;
         width: 45%;
+    }
+
+    .photo_caption
+    {
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 40px;
     }
 
 
