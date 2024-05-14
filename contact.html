@@ -32,7 +32,8 @@
 
         #form
         {
-            width: 80%;
+            margin: 0 20%;
+            width: 60%;
         }
 
         #contact_container
@@ -40,6 +41,7 @@
             width: 100%;
             align-self: center;
             padding-bottom: 16px;
+            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -51,6 +53,7 @@
             font-size: 16px;
             line-height: 32px;
             padding: 16px 32px;
+            margin-left: 5%;
             color: white;
             height: auto;
             width: auto;
@@ -70,20 +73,20 @@
 
         #hello_text
         {
-            width: 80%;
+            width: 100%;
             align-self: center;
-            text-align: left;
+            text-align: center;
             font-family: 'Roboto', sans-serif;
         }  
 
         .input_field
         {
-            width: 100%;
+            margin: 16px 5%;
+            width: calc(90% - 16px);
             font-size: 2.5vh;
             border-color: black;
             border-width: 0.1px;
             border-radius: 0;
-            margin: 16px 0;
             font-family: 'Jost', sans-serif;
             resize: none;
             padding: 8px;
@@ -92,16 +95,17 @@
         @media only screen and (max-width: 1050px) 
         {
 
+        #form
+        {
+            margin: 0%;
+            width: 80%;
+        }
+
+
         #hello_text
         {
             margin-top: 0px;
         }
-
-        #contact_container
-        {
-            width: calc(100% - 48px);
-            margin-left: 16px;
-        } 
 
         .input_field
         {
@@ -115,6 +119,17 @@
         }
 
         }
+
+        @media only screen and (max-width: 660px) 
+        {
+
+        #form
+        {
+            margin: 0%;
+            width: 100%;
+        }
+
+        }   
 
     </style>
 </head>
@@ -131,31 +146,62 @@
         <ul class="nav_list">
             <li><a href="projects.html">Projects</a></li>
             <li><a href="photography.html">Photography</a></li>
-            <li><a href="contact.html"> Contact</a></li>
+            <li><a href="index.html#contact_container" onClick="openContact();"> Contact</a></li>
             <li id="selected"><a href="index.html">About</a></li>
         </ul>
     </div>
     <div class="content">
-        <div class="content_left">
-            <img src="images/home.webp"/>
-        </div>
-        <div class="content_right">
-            <p class="headline"> UI Developer</p>
-            <p class="byline"> Based in Dublin, Ireland. </p>
-            <p> Hello. I'm Cian. 👋</p>
-
-            <p> I am currently working in an IT rotation with Ireland's <a id="esb_link" href="https://esb.ie"> Electricity Supply Board</a>. 
-                This involves UX design, cybersecurity, SAP and project management. 👨🏻‍💻 </p>
-            
-            <p> From websites, research, science installations and video games, UX and UI have been my passion since I started my career. 💡</p>
-            <div class="button_container">
-                <div> Email: <a href="mailto:cianbyrne7@gmail.com"> cianbyrne7@gmail.com </a></div>
-                <div> LinkedIn: <a href="https://www.linkedin.com/in/cianbyrneux/"> @cianbyrneux </a></div>
-                <div> Resume: <a href="resume.pdf"> Click Here </a></div>
-            </div>
-        </div>        
-    </div> 
+    <div id="contact_container">
+        <p id="hello_text" class="headline"> Say Hello 👋</p>
+        <form id="form" method="post">
+            <input class="input_field" type="text" placeholder="Name" id="name" autocomplete="off" required>
+            <input class="input_field" type="email" placeholder="Email" id="email" autocomplete="off" required>
+            <input class="input_field" type="text" placeholder="Subject" id="subject" autocomplete="off" required>
+            <textarea class="input_field" id="message" resize="none" placeholder="Message" cols="30" rows="10" required></textarea>
+            <button id="sendMessageBtn"> Send Message </button>
+        </form>
+    </div>   
  <script src="app.js"></script>  
+ <script>
+
+    function openContact() {
+        document.querySelector('.nav_list').classList.toggle('nav-active');
+        document.querySelector('.body').classList.toggle('fixed');
+        document.querySelector('.burger').classList.toggle('toggle');
+    }
+        
+    var btn = document.getElementById('sendMessageBtn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+        var body = 
+        `Name: ${name} <br/>
+        Email: ${email} <br/>
+        Subject: ${subject} <br/>
+        Message: ${message} <br/>`
+
+        if(name == "" || subject == "" || email == "" || message == "")
+        {
+            alert("You left a field empty!");
+        }
+        else
+        {     
+            Email.send({
+            SecureToken : '22780a33-eb9e-47ac-a147-e852f49d7414',
+            To : 'cianbyrne7@gmail.com',
+            From : 'ciancontactemail@cianbyrne.co.uk',
+            Subject : "Contact Message",
+            Body : body
+            }).then(
+            message => alert("Your message was sent!"),
+            document.getElementById("form").reset()
+            );
+        }
+    });
+</script>
 </body>
 
 </html>
