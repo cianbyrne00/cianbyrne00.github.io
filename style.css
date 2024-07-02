@@ -18,7 +18,7 @@ body
     margin: 0;
     display: block;
     background-color: white;
-    font-size: 2.2vh;
+    font-size: 2.5vh;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -371,7 +371,7 @@ Photos Page
 
     .photo_container
     {
-        width: 90%;
+        width: 100%;
         display: relative;
     }
 }
