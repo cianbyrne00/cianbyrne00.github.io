@@ -121,10 +121,6 @@ li:hover
     width: 50%;
     height: 100%;
     padding: 0px 17px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
 }
 
 .content_left img
@@ -538,7 +534,6 @@ Mobile View
         height: auto;
         padding-bottom: calc(5% + 2vw);
         line-height: 40px;
-        display: flex;
     }
 
     .content_left img
