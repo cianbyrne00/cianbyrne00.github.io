@@ -13,6 +13,11 @@
     display: none;
 }
 
+#full_name:hover, #short_name:hover
+{
+    color: rgb(159, 185, 117);
+}
+
 body
 {
     margin: 0;
@@ -33,12 +38,12 @@ hr
 {
     height: 1px;
     border: 0;
-    background-color:  rgb(227 179 211);
+    color: rgb(159, 185, 117);
 }
 
 a:hover
 {
-    color: rgb(227 179 211);
+    color: rgb(159, 185, 117);
 }
 
 a, a:visited, a:active 
@@ -89,7 +94,7 @@ a, a:visited, a:active
 
 li:hover
 {
-    color: rgb(227 179 211);
+    color: rgb(159, 185, 117);
 }
 
 #selected
@@ -154,17 +159,17 @@ li:hover
     justify-content: space-evenly;
 }
 
+
+.button_container a:hover, #esb_link:hover, .link:hover
+{
+    color: rgb(159, 185, 117);
+}
+
 .button_container a, #esb_link, .link
 {
     text-decoration: underline;
     font-weight: 200;
 }
-
-#esb_link:hover
-{
-    color: rgb(227 179 211);
-}
-
 
 .button_container div
 {
@@ -204,7 +209,7 @@ button:focus-visible
 
 button:hover
 {
-    color: rgb(227 179 211);
+    color: rgb(159, 185, 117);
 }
 
 
@@ -467,7 +472,7 @@ Mobile View
     .burger div
     {    
         position:inherit;
-        background-color: rgb(227 179 211);
+        background-color:rgb(159, 185, 117);
         margin-left: 10%;
         width: 34px;
         height: 3px;
