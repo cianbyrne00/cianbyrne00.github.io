@@ -302,6 +302,15 @@ button:disabled
     font-weight: 200;
 }
 
+.figmaprototype
+{
+    width: 375px;
+    height: 800px;
+    align-self: center;
+    justify-self: center; 
+    margin-left: calc(50% - 182px)  
+}
+
 @media only screen and (min-width: 1051px) 
 {
 
@@ -333,6 +342,12 @@ button:disabled
     {
         font-size: 16px;
         font-weight: 200;
+    }
+
+    .figmaprototype
+    {
+    width: 100%;
+    margin-left: 0;
     }
 }
 
