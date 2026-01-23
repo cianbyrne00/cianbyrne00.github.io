@@ -10,6 +10,13 @@
     color: white;
 }
 
+.empire_header
+{
+    background:
+linear-gradient(238.42deg, #E0A100 0%, #A54306 100%);
+color: white;
+}
+
 .pill
 {
     color: black;
