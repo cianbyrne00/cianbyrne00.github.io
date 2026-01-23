@@ -12,9 +12,14 @@
 
 .empire_header
 {
-    background:
-linear-gradient(238.42deg, #E0A100 0%, #A54306 100%);
-color: white;
+    background: linear-gradient(238.42deg, #E0A100 0%, #A54306 100%);
+    color: white;
+}
+
+.research_header
+{
+    background: linear-gradient(238.42deg, #0076C0 0%, #005E99 100%);
+    color: white;
 }
 
 .pill
