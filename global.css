@@ -1,0 +1,334 @@
+
+body
+{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    width: 100vw;
+    height: 100vh;
+    line-height: 1.5;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.nounderline:hover
+{
+    text-decoration: none;
+}
+
+h1
+{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+h2
+{
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 12px 0;
+}
+
+.navmenu
+{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F2F2F2;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.navmenu_group
+{
+    padding: 24px 24px;
+    display: flex;
+    align-self: center;
+    width: 813px;
+    justify-content: space-between;
+}
+
+.title_container
+{
+    background-color: #FFFFFF;
+}
+
+.quick_links_container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav_item
+{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration-style: solid;
+}
+
+.aboutme
+{
+    line-height: 24px;
+}
+
+.nav_item-middle
+{
+    padding: 0 40px;
+}
+
+.title
+{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 4px;
+}
+
+.sub_title
+{
+    font-family: Inter;
+    font-weight: 200;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.31px; 
+}
+
+.container
+{
+    padding: 24px 24px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 813px;
+}
+
+.introduction_section
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.intro_container
+{
+    padding: 24px 24px;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    width: 813px;
+}
+
+.introduction_group
+{
+    margin-right: 40px;
+}
+
+.projects_section
+{
+    background-color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.section
+{
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.alt
+{
+    background-color: #FAFAFA;
+}
+
+.section_title
+{
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+footer
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(39, 39, 39, 1);
+}
+
+footer p
+{
+     margin: 0 0 24px 0;
+     font-size: 16px;
+     font-weight: 400;
+     width: 637px;
+     text-align: center;
+     line-height: 24px;
+}
+
+.icons_container
+{
+    display: flex;
+}
+
+.icons_container img
+{
+    height: 24px;
+    margin: 0 20px;
+}
+
+.pills_container
+{
+    display: flex;
+    flex-direction: row;
+    padding: 24px 0 0 0;
+}
+
+.pill
+{
+   background: rgba(243, 244, 246, 1);
+   padding: 8px 16px;
+   margin-right:  16px;
+   border-radius: 16px;
+}
+
+.case_study_image
+{
+    display: flex;
+}
+
+.case_study_image img
+{
+    width: 383px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+@media (max-width: 813px) 
+{
+
+    .navmenu
+    {
+        width: calc(100% - 48px);
+        padding: 24px;
+    }
+
+    .navmenu_group
+    {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    .introduction_section
+    {
+        width: calc(100% - 48px);
+        padding: 24px;
+    }
+
+    .quick_links_container
+    {
+        display: none;
+    }
+
+    .intro_container
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    #headshot
+    {
+        display: none;
+    }
+
+    .pills_container
+    {
+        display: none;
+    }
+
+    .projects_section
+    {
+        width: calc(100% - 48px);
+        padding: 24px;
+    }
+
+    .container
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .case_study_card
+    {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .case_study_image img
+    {
+        width: 100%;
+         border-radius: 8px 8px 0px 0px;
+    }
+
+    .home_image
+    {
+        width: 500px;
+    }
+
+    .case_study_top_info
+    {
+        margin-bottom: 24px;
+    }
+
+    footer
+    {
+        width: calc(100% - 48px);
+        padding: 24px;
+    }
+
+    footer p
+    {
+        width: 100%;
+    }
+
+}   
+

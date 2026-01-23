@@ -1,0 +1,76 @@
+.esbn_header
+{
+    background: linear-gradient(238.42deg, #0E5D98 0%, #6E277C 100%);
+    color: white;
+}
+
+.staycation_header
+{
+    background: linear-gradient(268.46deg, #2BA36E 0%, #2C7958 99.54%);
+    color: white;
+}
+
+.pill
+{
+    color: black;
+}
+
+p
+{
+    margin: 0 0 24px 0;
+}
+
+/*  Breadcrumbs */
+
+.breadcrumbs
+{
+    background: rgba(250, 250, 250, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.breadcrumbs_container
+{
+    width: 813px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs_container img
+{
+    width: 16px;
+    height: 16px;
+    margin: 0 12px;
+}
+
+.section img
+{
+    width: 600px;
+    align-self: center;
+}
+
+.small_image
+{
+    width: 400px !important;
+}
+
+@media (max-width: 813px) 
+{
+
+   /* Case study mobile */
+
+    .section
+    {
+        width: calc(100% - 48px);
+        padding: 24px;
+    }
+
+    .section img
+    {
+        width: 100%;
+    }
+
+}
