@@ -10,7 +10,7 @@ body
     width: 100vw;
     height: 100vh;
     line-height: 1.5;
-    background-color: rgba(39, 39, 39, 1);
+    background: linear-gradient(180deg, #272727 50%, #ffffff 57.01%);
 }
 
 a
