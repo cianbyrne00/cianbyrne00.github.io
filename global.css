@@ -10,6 +10,7 @@ body
     width: 100vw;
     height: 100vh;
     line-height: 1.5;
+    background-color: rgba(39, 39, 39, 1);
 }
 
 a
@@ -140,6 +141,7 @@ h2
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #F2F2F2;
+     background-color: #FFFFFF;
 }
 
 .intro_container
