@@ -275,6 +275,11 @@ footer p
         padding: 0;
     }
 
+    .introduction_group
+    {
+        margin-right: 0;
+    }
+
     #headshot
     {
         display: none;
