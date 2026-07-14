@@ -22,6 +22,12 @@
     color: white;
 }
 
+.triantan_header
+{
+    background: linear-gradient(238.42deg, #e859c4 0%, #A91185 100%);
+    color: white;
+}
+
 .pill
 {
     color: black;
