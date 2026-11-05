@@ -70,6 +70,33 @@ li
     align-items: center;
     justify-items: center;
     width: 100%;
+    position: relative;
+    z-index: 20;
+}
+
+.navmenu::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    transition: opacity 0.2s ease, backdrop-filter 0.2s ease, -webkit-backdrop-filter 0.2s ease, background-color 0.2s ease;
+    z-index: 5;
+}
+
+body.desktop-case-overlay-open .navmenu::after
+{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .navmenu_group
@@ -79,6 +106,8 @@ li
     align-self: center;
     width: 813px;
     justify-content: space-between;
+    position: relative;
+    z-index: 10;
 }
 
 .title_container
@@ -91,6 +120,203 @@ li
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.desktop_case_studies_menu
+{
+    position: relative;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.desktop_case_studies_toggle
+{
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    color: black;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+.desktop_case_studies_toggle:hover
+{
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.desktop_case_studies_toggle:active
+{
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.desktop_case_studies_toggle:focus-visible
+{
+    outline: 2px solid #000000;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.desktop_case_studies_panel
+{
+    display: none;
+    position: absolute;
+    right: -20px;
+    top: calc(100% + 50px);
+    min-width: 320px;
+    border: 1px solid #F2F2F2;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+    padding: 16px;
+    z-index: 30;
+}
+
+.desktop_case_studies_menu.desktop-case-open .desktop_case_studies_panel
+{
+    display: block;
+}
+
+.desktop_case_studies_title
+{
+    font-size: 14px;
+    color: #737373;
+    margin-bottom: 10px;
+}
+
+.desktop_case_studies_link
+{
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.desktop_case_studies_panel a:last-child .desktop_case_studies_link
+{
+    margin-bottom: 0;
+}
+
+.desktop_case_studies_panel a:hover
+{
+    text-decoration: underline;
+}
+
+.desktop_case_studies_panel a:hover .desktop_case_studies_link
+{
+    font-weight: 500;
+}
+
+.mobile_nav_menu
+{
+    display: none;
+}
+
+.mobile_nav_toggle
+{
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+}
+
+.mobile_nav_toggle::marker,
+.mobile_nav_toggle::-webkit-details-marker
+{
+    display: none;
+}
+
+.mobile_nav_toggle:focus-visible
+{
+    outline: 2px solid #000000;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.mobile_nav_line
+{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transition: transform 0.25s ease;
+    transform-origin: center;
+}
+
+.mobile_nav_line:first-child
+{
+    transform: translateY(calc(-50% - 4px));
+}
+
+.mobile_nav_line:last-child
+{
+    transform: translateY(calc(-50% + 4px));
+}
+
+.mobile_nav_menu[open] .mobile_nav_line:first-child
+{
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.mobile_nav_menu[open] .mobile_nav_line:last-child
+{
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+@keyframes mobileNavItemsFadeIn
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes mobileCasePanelFadeIn
+{
+    from
+    {
+        opacity: 0;
+        transform: translateX(16px);
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes mobileCasePanelFadeOut
+{
+    from
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to
+    {
+        opacity: 0;
+        transform: translateX(16px);
+    }
 }
 
 .nav_item
@@ -268,6 +494,8 @@ footer p
     {
         width: 100%;
         padding: 0 24px;
+        align-items: center;
+        position: relative;
     }
 
     .introduction_section
@@ -279,6 +507,170 @@ footer p
     .quick_links_container
     {
         display: none;
+    }
+
+    .mobile_nav_menu
+    {
+        display: block;
+        position: relative;
+        z-index: 20;
+    }
+
+    .mobile_nav_menu[open]
+    {
+        position: fixed;
+        inset: 0;
+        margin: 0;
+        background-color: #FFFFFF;
+        z-index: 1000;
+    }
+
+    .mobile_nav_menu[open] .mobile_nav_toggle
+    {
+        position: absolute;
+        top: 38px;
+        right: 24px;
+        z-index: 2;
+    }
+
+    .mobile_nav_links
+    {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        background-color: #FFFFFF;
+        padding: 96px 24px 24px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        overflow-y: auto;
+    }
+
+    .mobile_nav_main_item
+    {
+        display: block;
+    }
+
+    .mobile_case_studies_trigger
+    {
+        border: 0;
+        background: transparent;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .mobile_case_arrow
+    {
+        font-size: 38px;
+        line-height: 0.8;
+        font-weight: 300;
+        transition: transform 0.2s ease;
+    }
+
+    .mobile_case_studies_trigger:hover .mobile_case_arrow,
+    .mobile_case_studies_trigger:focus-visible .mobile_case_arrow
+    {
+        transform: translateX(4px);
+    }
+
+    .mobile_case_studies_panel
+    {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background-color: #FFFFFF;
+        z-index: 3;
+        box-sizing: border-box;
+        padding: 96px 24px 24px 24px;
+        overflow-y: auto;
+    }
+
+    .mobile_nav_menu.mobile-case-open .mobile_case_studies_panel
+    {
+        display: block;
+        animation: mobileCasePanelFadeIn 0.24s ease-out forwards;
+    }
+
+    .mobile_nav_menu.mobile-case-closing .mobile_case_studies_panel
+    {
+        display: block;
+        pointer-events: none;
+        animation: mobileCasePanelFadeOut 0.2s ease-in forwards;
+    }
+
+    .mobile_case_back
+    {
+        position: fixed;
+        top: 38px;
+        left: 24px;
+        border: 0;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        font-size: 36px;
+        line-height: 0.8;
+        font-weight: 300;
+    }
+
+    .mobile_case_studies_title
+    {
+        display: none;
+    }
+
+    .mobile_case_study_link
+    {
+        display: block;
+        color: black;
+        font-family: Inter;
+        font-size: 36px;
+        line-height: 1;
+        font-weight: 500;
+        text-decoration: none;
+        margin-bottom: 24px;
+    }
+
+    .mobile_case_study_link:last-child
+    {
+        margin-bottom: 0;
+    }
+
+    .mobile_nav_menu[open] .mobile_nav_main_item
+    {
+        opacity: 0;
+        animation: mobileNavItemsFadeIn 0.32s ease-out forwards;
+    }
+
+    .mobile_nav_menu[open] .mobile_nav_main_item:nth-child(1)
+    {
+        animation-delay: 0.03s;
+    }
+
+    .mobile_nav_menu[open] .mobile_nav_main_item:nth-child(2)
+    {
+        animation-delay: 0.08s;
+    }
+
+    .mobile_nav_menu[open] .mobile_nav_main_item:nth-child(3)
+    {
+        animation-delay: 0.13s;
+    }
+
+    .mobile_nav_menu[open] .mobile_nav_main_item:nth-child(4)
+    {
+        animation-delay: 0.18s;
+    }
+
+    .mobile_nav_links .nav_item
+    {
+        white-space: nowrap;
+        font-size: 36px;
+        line-height: 1;
+        font-weight: 500;
     }
 
     .intro_container
