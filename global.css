@@ -147,12 +147,14 @@ body.desktop-case-overlay-open .navmenu::after
 .desktop_case_studies_toggle:hover
 {
     text-decoration: underline;
+    text-underline-offset: 2px;
     font-weight: 400;
 }
 
 .desktop_case_studies_toggle:active
 {
     text-decoration: underline;
+    text-underline-offset: 2px;
     font-weight: 400;
 }
 
@@ -181,6 +183,17 @@ body.desktop-case-overlay-open .navmenu::after
 .desktop_case_studies_menu.desktop-case-open .desktop_case_studies_panel
 {
     display: block;
+}
+
+.desktop_case_studies_menu.desktop-case-open .desktop_case_studies_toggle,
+.desktop_case_studies_menu.desktop-case-open .desktop_case_studies_toggle:hover,
+.desktop_case_studies_menu.desktop-case-open .desktop_case_studies_toggle:active,
+.desktop_case_studies_menu.desktop-case-open .desktop_case_studies_toggle:focus-visible
+{
+    text-decoration-line: underline;
+    text-decoration-color: currentColor;
+    text-underline-offset: 2px;
+    font-weight: 400;
 }
 
 .desktop_case_studies_title
@@ -562,6 +575,15 @@ footer p
         justify-content: space-between;
         cursor: pointer;
         text-align: left;
+        color: black;
+        -webkit-text-fill-color: black;
+    }
+
+    .mobile_case_studies_trigger .nav_item,
+    .mobile_case_arrow
+    {
+        color: black;
+        -webkit-text-fill-color: black;
     }
 
     .mobile_case_arrow
@@ -576,6 +598,13 @@ footer p
     .mobile_case_studies_trigger:focus-visible .mobile_case_arrow
     {
         transform: translateX(4px);
+    }
+
+    .mobile_case_studies_trigger:hover .nav_item,
+    .mobile_case_studies_trigger:focus-visible .nav_item
+    {
+        text-decoration: underline;
+        text-underline-offset: 2px;
     }
 
     .mobile_case_studies_panel
@@ -626,12 +655,22 @@ footer p
     {
         display: block;
         color: black;
+        -webkit-text-fill-color: black;
         font-family: Inter;
         font-size: 36px;
         line-height: 1;
         font-weight: 500;
         text-decoration: none;
         margin-bottom: 24px;
+    }
+
+    .mobile_case_study_link:visited,
+    .mobile_case_study_link:hover,
+    .mobile_case_study_link:active,
+    .mobile_case_study_link:focus-visible
+    {
+        color: black;
+        -webkit-text-fill-color: black;
     }
 
     .mobile_case_study_link:last-child
